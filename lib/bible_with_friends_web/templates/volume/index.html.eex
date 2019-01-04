@@ -1,0 +1,9 @@
+<div class="phx-hero">
+  <h2>Hello World, from Phoenix!</h2>
+  <%# inspect @volumes %>
+  <ul>
+  <%= for v <- @volumes do %>
+    <li><%= link(v.volume_name, to: "/volumes/" <> v.dam_id) %> (<%= v.dam_id %> <%= v.collection_name %>)</li>
+  <% end %>
+  </ul>
+</div>

@@ -1,0 +1,9 @@
+<div class="phx-hero">
+  <h2>Hello World, from Phoenix!</h2>
+  <%# inspect @volumes %>
+  <ul>
+  <%= for b <- @books do %>
+    <li><%= b.book_name%> - Chapters: <%= b.number_of_chapters %></li>
+  <% end %>
+  </ul>
+</div>
